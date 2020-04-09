@@ -1,0 +1,20 @@
+{
+    "name": "Zub-Token-Sale",
+    "version": "1.0.0",
+    "description": "Zub Token Sale ICO",
+    "main": "truffl.js",
+    "directories": {
+        "test": "test"
+    },
+
+    "scripts"{
+        "dev":"lite-server"
+
+    },
+    "aurther": "Zubair",
+    "License": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+ 
+    }
+}
