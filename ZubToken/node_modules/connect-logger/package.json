@@ -1,0 +1,25 @@
+{
+  "name": "connect-logger",
+  "description": "connect middleware for logging",
+  "version": "0.0.1",
+  "author": {
+    "name": "geta6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geta6/connect-logger.git"
+  },
+  "main": "lib/logger.js",
+  "keywords": [ "console", "color", "level", "log", "logger" ],
+  "dependencies": {
+    "moment": "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*"
+  },
+  "license": "MIT"
+
+,"_resolved": "https://registry.npmjs.org/connect-logger/-/connect-logger-0.0.1.tgz"
+,"_integrity": "sha1-TZmZeKHSC7RgjnzUNNdBZSJVF0s="
+,"_from": "connect-logger@0.0.1"
+}

@@ -1,5 +1,5 @@
 {
-    "name": "Zub-Token-Sale",
+    "name": "zub-token-snpm nale",
     "version": "1.0.0",
     "description": "Zub Token Sale ICO",
     "main": "truffl.js",
@@ -8,9 +8,8 @@
     },
 
     "scripts": {
-        "dev":"lite-server"
-
-    },
+        "dev": "lite-server"
+      },
     "aurther": "Zubair",
     "License": "ISC",
     "devDependencies": {
