@@ -2,62 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Zub Token ICO Sale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Zub Token ICO Sale</title>
 </head>
 
 <body>
 
-    <div class="container" style="width: 650px ;">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="text-center">Zub Token ICO Sale </h1>
-                <hr />
-                <br />
+  <div class="container" style="width: 650px ;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Zub Token ICO Sale </h1>
+        <hr />
+        <br />
+        <div id="loader">
+        
+          <p class="text-center" >Loading...</p>
+           </div>
+      
+      </div>
+      
+       
+      
+  
+      <div id="contain" class="text-center">
+        
+
+        <p>Introducing "Zub Token" (Zub)
+
+          Zub Token Price is <span class="token-price"></span> ETHER. You currently have<span class="zub-balance">
+
+          </span>&nbsp;Zub.
+
+        </p>
+      
+        <br />
+        <form onSubmit="App.buyTokens(); return false;" role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1"
+                pattern="[0-9]">
+              </input>
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
+              </span>
             </div>
-            <div id="contain" class="text-center">
+          </div>
+        </form>
+        <br>
+        <div class="progress">
+          <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
+        <hr>
+        <p id="accountAddress"></p>
+      </div>
+    </div>
+  </div>
 
-                <p>Introducing "Zub Token" (Zub)
 
-                    Zub Token Price is <span class="token-price"></span> ETHER. You currently have<span
-                        class="zub-balance">
-
-                    </span>&nbsp;Zub.
-
-                </p>
-                <br />
-                <form onSubmit="App.buyTokens(); return false;" role="form">
-                    <div class="form-group">
-                      <div class="input-group">
-                        <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
-                        </input>
-                        <span class="input-group-btn">
-                          <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
-                        </span>
-                      </div>
-                    </div>
-                  </form>
-                  <br>
-                   <div class="progress">
-                      <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
-                      </div>
-                    </div>
-                  <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
-                  <hr>
-                  <p id="accountAddress"></p>
-                </div>
-              </div>
-            </div>
-   
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="./js/web3.min.js"></script>
-    <script src="./js/truffle-contract.min.js"></script>
-    <script src="./js/app.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="./js/web3.min.js"></script>
+  <script src="./js/truffle-contract.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
