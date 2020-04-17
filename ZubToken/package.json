@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "package": "^1.0.1"
+    "package": "^1.0.1",
+    "web3": "^1.2.6"
   }
 }
