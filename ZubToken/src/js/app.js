@@ -96,15 +96,15 @@ App = {
       $('#progress').css('width', progressPercent + '%');
 
       // Load token contract
-      App.contracts.ZubToken.deployed().then(function(instance) {
-        ZubTokenInstance = instance;
-        return ZubTokenInstance.balanceOf(App.account);
-      }).then(function(balance) {
-        $('.Zub-balance').html(balance.toNumber());
-        App.loading = false;
-        loader.hide();
-        content.show();
-      })
+      // App.contracts.ZubToken.deployed().then(function(instance) {
+      //   ZubTokenInstance = instance;
+      //   return ZubTokenInstance.balanceOf(App.account);
+      // }).then(function(balance) {
+      //   $('.Zub-balance').html(balance.toNumber());
+      //   App.loading = false;
+      //   loader.hide();
+      //   content.show();
+      // })
     });
   },
 
@@ -113,7 +113,8 @@ App = {
     $('#loader').show();
     var numberOfTokens = $('#numberOfTokens').val();
     App.contracts.ZubTokenSale.deployed().then(function(instance) {
-      return instance.buyTokens(numberOfTokens, {
+      ZubTokenInstance = instance;
+      return instance.buyTokens(numberOfTokens, { //zubtokeninstanc
         from: App.account,
         value: numberOfTokens * App.tokenPrice,
         gas: 500000 // Gas limit
